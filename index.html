@@ -1,0 +1,804 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- 
+    - primary meta tags
+  -->
+  <title>Arjun TP - Data Analyst & MCA Student</title>
+  <meta name="title" content="Arjun TP - Data Analyst & MCA Student">
+  <meta name="description" content="Personal portfolio of Arjun TP, MCA student and aspiring data analyst">
+
+  <!-- 
+    - favicon
+  -->
+  <link rel="shortcut icon" href="./favicon.svg" type="image/svg+xml">
+
+  <!-- 
+    - google font link
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- 
+    - custom css link
+  -->
+  <link rel="stylesheet" href="./assets/css/style.css">
+
+  <!-- 
+    - preload images
+  -->
+  <link rel="preload" as="image" href="./assets/images/hero-banner.jpg">
+
+  <style>
+    /* Updated Heading Styles for All Sections */
+    .section-title {
+      font-size: 4rem !important;
+      line-height: 1.1;
+      margin-bottom: 1.5rem;
+      font-weight: 700;
+      letter-spacing: -0.5px;
+    }
+    
+    .section-subtitle {
+      font-size: 1.2rem;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      margin-bottom: 0.5rem;
+      color: var(--orange-red);
+    }
+
+    /* Hero Section Heading Specific */
+    .hero-title {
+      font-size: 4rem !important;
+      line-height: 1;
+      margin-bottom: 1rem;
+      /* color: #d6721f; */
+    }
+
+    /* Two Column Achievements Layout */
+    .two-column-achievements {
+      display: flex;
+      gap: 40px;
+      margin-top: 50px;
+    }
+
+    .achievement-column {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      gap: 30px;
+    }
+
+    .achievement-card {
+      background: var(--eerie-black-2);
+      border-radius: 12px;
+      padding: 30px;
+      transition: all 0.3s ease;
+    }
+
+    .achievement-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+    }
+
+    @media (max-width: 768px) {
+      .section-title {
+        font-size: 3rem !important;
+      }
+      
+      .hero-title {
+        font-size: 3.5rem !important;
+      }
+      
+      .two-column-achievements {
+        flex-direction: column;
+        gap: 30px;
+      }
+    }
+  </style>
+</head>
+
+
+  
+
+
+
+<body>
+
+  <!-- 
+    - #PRELOADER
+  -->
+
+  <div class="preloader" data-preloader>
+    <div class="circle"></div>
+  </div>
+
+
+
+
+
+  <!-- 
+    - #HEADER
+  -->
+
+  <header class="header" data-header>
+    <div class="container">
+
+      <a href="#" class="logo">
+        <img src="./assets/images/logo.svg" width="120" height="30" alt="Arjun TP home">
+      </a>
+
+      <button class="nav-toggle-btn" data-nav-toggler data-nav-toggle-btn aria-label="Toggle menu">
+        <span class="line line-1"></span>
+        <span class="line line-2"></span>
+      </button><nav class="navbar" data-navbar>
+        <ul class="navbar-list">
+          <li><a href="#home" class="navbar-link">Home</a></li>
+         
+          <li><a href="#skills" class="navbar-link">Skills</a></li>
+          <li><a href="#projects" class="navbar-link">Projects</a></li>
+          <li><a href="#publications" class="navbar-link">Publications</a></li>
+         
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+
+
+
+
+  <main>
+    <article>
+
+      <!-- 
+        - #HERO
+      -->
+
+      <section class="section hero" id="home" aria-label="home"> 
+
+      
+        <div class="container">
+
+          <div class="hero-content">
+
+            <h1 class="h1 hero-title">Arjun TP</h1>
+
+            <p class="hero-subtitle">
+              Data Analyst 
+            </p>
+
+            <div class="hero-banner">
+              <img src="./assets/images/hero-banner.jpg" width="800" height="800" alt="Arjun TP" class="w-100">
+            </div>
+
+            <p class="section-text">
+              Hi, I'm Arjun TP, a final-semester MCA student with a strong foundation in data analytics. I'm passionate about transforming data into meaningful insights to drive business decisions.
+            </p>
+            <a href="https://drive.google.com/file/d/1tJ70W5EdG3gYX2yDztUwv5iBP37i6_Bs/view" class="btn has-before" target="_blank">
+              <span class="span">Download CV</span>
+
+              <ion-icon name="download-outline" aria-hidden="true"></ion-icon>
+            </a>
+
+          </div>
+
+        </div>
+      </section>
+
+
+
+
+
+      <!-- 
+        - #SERVICE
+      -->
+
+      <section class="service" aria-labelledby="service-label">
+        <div class="container">
+
+          <div class="title-wrapper">
+
+            <div>
+              <p class="section-subtitle">
+                Skills & Expertise
+              </p>
+
+              <h2 class="h2 section-title" id="service-label">Services</h2>
+            </div>
+
+            <p class="section-text">
+              As a data analyst, I offer various data-driven solutions to help businesses make informed decisions. My expertise includes data visualization, exploratory data analysis, dashboard development, and KPI tracking with a strong foundation in various analytical tools.
+            </p>
+
+          </div>
+
+          <div class="slider" data-slider>
+
+            <ul class="slider-container service-list" data-slider-container>
+
+              <li class="slider-item" data-slider-item>
+                <div class="service-card">
+
+                  <div class="card-icon">
+                    <ion-icon name="analytics-outline"></ion-icon>
+                  </div>
+
+                  <h3 class="h3 card-title">Data Analytics</h3>
+
+                  <p class="card-text">
+                    Transforming raw data into actionable insights through exploratory data analysis and statistical methods to drive business decisions.
+                  </p>
+
+                  <span class="text-lg card-number">01</span>
+
+                  <a href="#" class="layer-link" aria-label="More about my data analytics services"></a>
+
+                </div>
+              </li>
+
+              <li class="slider-item" data-slider-item>
+                <div class="service-card">
+
+                  <div class="card-icon">
+                    <ion-icon name="bar-chart-outline"></ion-icon>
+                  </div>
+
+                  <h3 class="h3 card-title">Data Visualization</h3>
+
+                  <p class="card-text">
+                    Creating interactive dashboards using Power BI and other tools to communicate complex data insights in a user-friendly manner.
+                  </p>
+
+                  <span class="text-lg card-number">02</span>
+
+                  <a href="#" class="layer-link" aria-label="More about my data visualization services"></a>
+
+                </div>
+              </li>
+
+              <li class="slider-item" data-slider-item>
+                <div class="service-card">
+
+                  <div class="card-icon">
+                    <ion-icon name="server-outline"></ion-icon>
+                  </div>
+
+                  <h3 class="h3 card-title">Database Management</h3>
+
+                  <p class="card-text">
+                    Managing SQL databases efficiently, writing optimized queries, and ensuring data integrity for reliable analysis and reporting.
+                  </p>
+
+                  <span class="text-lg card-number">03</span>
+
+                  <a href="#" class="layer-link" aria-label="More about my database management services"></a>
+
+                </div>
+              </li>
+
+              <li class="slider-item" data-slider-item>
+                <div class="service-card">
+
+                  <div class="card-icon">
+                    <ion-icon name="code-outline"></ion-icon>
+                  </div>
+
+                  <h3 class="h3 card-title">Python Development</h3>
+
+                  <p class="card-text">
+                    Developing data processing scripts, automation solutions, and analytical tools using Python and related libraries like Pandas.
+                  </p>
+
+                  <span class="text-lg card-number">04</span>
+
+                  <a href="#" class="layer-link" aria-label="More about my Python development services"></a>
+
+                </div>
+              </li>
+
+              <li class="slider-item" data-slider-item>
+                <div class="service-card">
+
+                  <div class="card-icon">
+                    <ion-icon name="cloud-outline"></ion-icon>
+                  </div>
+
+                  <h3 class="h3 card-title">Cloud Computing</h3>
+
+                  <p class="card-text">
+                    Implementing cloud-based solutions for data storage, processing, and analytics to ensure scalability and accessibility.
+                  </p>
+
+                  <span class="text-lg card-number">05</span>
+
+                  <a href="#" class="layer-link" aria-label="More about my cloud computing services"></a>
+
+                </div>
+              </li>
+
+              <li class="slider-item" data-slider-item>
+                <div class="service-card">
+
+                  <div class="card-icon">
+                    <ion-icon name="flask-outline"></ion-icon>
+                  </div>
+
+                  <h3 class="h3 card-title">Business Intelligence</h3>
+
+                  <p class="card-text">
+                    Leveraging BI tools to translate complex data into strategic insights, KPI tracking, and performance metrics for business growth.
+                  </p>
+
+                  <span class="text-lg card-number">06</span>
+
+                  <a href="#" class="layer-link" aria-label="More about my Business Intelligence services"></a>
+
+                </div>
+              </li>
+
+            </ul>
+
+            <div class="slider-controls">
+              <button class="slider-control prev" data-slider-prev aria-label="Slide to previous item">
+                <div class="line"></div>
+                <div class="arrow"></div>
+              </button>
+
+              <button class="slider-control next" data-slider-next aria-label="Slide to next item">
+                <div class="line"></div>
+                <div class="arrow"></div>
+              </button>
+            </div>
+
+          </div>
+
+        </div>
+      </section>
+
+
+
+
+
+      <!-- 
+        - #SKILLS
+      -->
+      <section class="section skills" id="skills" aria-label="our skills">  
+        <div class="container">
+
+          <p class="section-subtitle">I Transform Data Into Insights</p>
+
+          <h2 class="h2 section-title">I Analyze & Visualize Data For Better Decisions.</h2>
+
+          <div class="skills-wrapper">
+
+            <div>
+              <p class="section-text">
+                As a data enthusiast, I'm skilled in turning complex datasets into clear, actionable insights that drive strategic business decisions. My background in computer science provides a solid foundation for applying analytical techniques across various domains.
+              </p>
+
+              <p class="section-text">
+                With expertise in Power BI, Python, SQL, and Excel, I specialize in creating intuitive dashboards and comprehensive reports that translate data into meaningful stories. I'm passionate about continuous learning and staying updated with the latest analytical tools and techniques.
+              </p>
+
+              <!-- <a href="#" class="btn has-before">tparjun12@gmail.com</a> -->
+            </div>
+
+            <div>
+
+              <ul class="skills-list">
+
+                <li>
+                  <div class="progress-wrapper">
+                    <p class="progress-label">Power BI</p>
+
+                    <data class="progress-value" value="90">90%</data>
+                  </div>
+
+                  <div class="progress-bg">
+                    <div class="progress" style="width: 90%;"></div>
+                  </div>
+                </li>
+
+                <li>
+                  <div class="progress-wrapper">
+                    <p class="progress-label">Python</p>
+
+                    <data class="progress-value" value="85">85%</data>
+                  </div>
+
+                  <div class="progress-bg">
+                    <div class="progress" style="width: 85%;"></div>
+                  </div>
+                </li>
+
+                <li>
+                  <div class="progress-wrapper">
+                    <p class="progress-label">SQL</p>
+
+                    <data class="progress-value" value="80">80%</data>
+                  </div>
+
+                  <div class="progress-bg">
+                    <div class="progress" style="width: 80%;"></div>
+                  </div>
+                </li>
+
+                <li>
+                  <div class="progress-wrapper">
+                    <p class="progress-label">Excel</p>
+
+                    <data class="progress-value" value="95">95%</data>
+                  </div>
+
+                  <div class="progress-bg">
+                    <div class="progress" style="width: 95%;"></div>
+                  </div>
+                </li>
+
+              </ul>
+
+            </div>
+
+          </div>
+
+        </div>
+      </section>
+<!-- 
+  - #PORTFOLIO
+--><section class="portfolio" id="projects" aria-labelledby="portfolio-label"> 
+  <div class="title-wrapper container">
+    <div>
+      <p class="section-subtitle" id="portfolio-label">My Work</p>
+      <h2 class="h2 section-title">Projects</h2>
+    </div>
+    <p class="section-text">
+      Here are my featured data analytics projects where I've applied my skills in Power BI to create interactive dashboards that provide actionable insights.
+    </p>
+  </div>
+
+  <div class="portfolio-grid">
+    <div class="portfolio-item">
+      <a href="https://app.powerbi.com/view?r=eyJrIjoiYzNlNjU1OWItMWViMS00YmEwLTkwZTAtZTRjNDI1YjM0YmNkIiwidCI6ImM2ZTU0OWIzLTVmNDUtNDAzMi1hYWU5LWQ0MjQ0ZGM1YjJjNCJ9&pageName=ReportSectionda2955df2a136b8cd9b8" 
+         target="_blank" class="portfolio-card-link">
+        <div class="portfolio-card img-holder" style="--width: 380; --height: 380;">
+          <img src="./assets/images/img.jpeg" width="380" height="380" loading="lazy" 
+               alt="Hospitality Analytics Dashboard" class="img-cover">
+
+          <div class="card-content">
+            <h3 class="h3 card-title">Hospitality Analytics Dashboard</h3>
+            <p class="card-text">Power BI dashboard analyzing hotel performance metrics including ADR, RevPAR, and occupancy rates.</p>
+            <span class="dashboard-link">View Dashboard <ion-icon name="open-outline"></ion-icon></span>
+          </div>
+        </div>
+      </a>
+    </div>
+
+    <div class="portfolio-item">
+      <a href="https://app.powerbi.com/view?r=eyJrIjoiZmZjZDE3Y2QtYTFkMS00MjA0LTgyYmQtYmYxNWFhN2QyZGIxIiwidCI6ImM2ZTU0OWIzLTVmNDUtNDAzMi1hYWU5LWQ0MjQ0ZGM1YjJjNCJ9" 
+         target="_blank" class="portfolio-card-link" rel="noopener">
+        <div class="portfolio-card img-holder" style="--width: 380; --height: 380;">
+          <img src="./assets/images/hotel.jpeg" width="380" height="380" loading="lazy" 
+               alt="T20 Cricket Data Analytics" class="img-cover">
+
+          <div class="card-content">
+            <h3 class="h3 card-title">T20 Cricket Data Analytics</h3>
+            <p class="card-text">Interactive Power BI dashboard analyzing player performance, team statistics, and match outcomes.</p>
+            <span class="dashboard-link">View Dashboard <ion-icon name="open-outline"></ion-icon></span>
+          </div>
+        </div>
+      </a>
+    </div>
+  </div>
+</section>
+
+<style>
+  /* Portfolio Section Specific Styles */
+  .portfolio .portfolio-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+
+  .portfolio .portfolio-item {
+    flex: 0 1 380px;
+  }
+
+  .portfolio .portfolio-card {
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+    position: relative;
+    height: 380px;
+  }
+
+  .portfolio .portfolio-card:hover {
+    transform: translateY(-5px);
+  }
+
+  .portfolio .card-content {
+    background-color: rgba(0,0,0,0.75);
+    padding: 20px;
+    color: white;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    transform: translateY(100%);
+    transition: transform 0.3s ease;
+  }
+
+  .portfolio .portfolio-card:hover .card-content {
+    transform: translateY(0);
+  }
+
+  .portfolio .img-holder {
+    position: relative;
+    overflow: hidden;
+    height: 100%;
+  }
+
+  .portfolio .img-cover {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+  }
+
+  .portfolio .portfolio-card:hover .img-cover {
+    transform: scale(1.05);
+  }
+
+  .portfolio .card-title {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    line-height: 1.3;
+  }
+
+  .portfolio .card-text {
+    font-size: 0.95rem;
+    margin-bottom: 15px;
+    line-height: 1.5;
+  }
+
+  .portfolio .dashboard-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 8px 16px;
+    background-color: #2a2a2a;
+    color: white;
+    border-radius: 4px;
+    font-size: 0.9rem;
+    transition: background-color 0.3s ease;
+  }
+
+  .portfolio .dashboard-link:hover {
+    background-color: #e63946;
+  }
+
+  @media (max-width: 768px) {
+    .portfolio .portfolio-grid {
+      flex-direction: column;
+      align-items: center;
+      gap: 20px;
+    }
+    
+    .portfolio .portfolio-item {
+      width: 100%;
+      max-width: 380px;
+    }
+
+  }
+</style>
+
+<!-- 
+        - #BLOG
+
+<<<< Updated Achievements/Blog Section (now two-column) -->
+<section class="section blog" id="publications" aria-labelledby="blog-label"> 
+  <div class="container">
+    <p class="section-subtitle" style="font-size: 1.2rem; letter-spacing: 2px;">PUBLICATIONS & CERTIFICATES</p>
+    <h2 class="h2 section-title" style="font-size: 4rem; line-height: 1.1;">Latest Achievements</h2>
+
+    <div class="two-column-achievements">
+      <!-- Column 1 -->
+      <div class="achievement-column">
+        <div class="achievement-card">
+          <h3 class="h3 card-title">Tata Group's Data Visualization</h3>
+          <p class="card-text">
+            Completed a data visualization simulation for Tata Consultancy Services, creating impactful visuals for executive decision-making.
+          </p>
+          <!-- <a href="#" class="btn has-before"> -->
+            <!-- <span class="span">Read more</span> -->
+            <!-- <ion-icon name="arrow-forward"></ion-icon> -->
+          <!-- </a> -->
+        </div>
+
+        <div class="achievement-card">
+          <h3 class="h3 card-title">Hospitality Analytics using Power BI</h3>
+          <p class="card-text">
+            Presented at NCCISCT'25 – National Conference on Intelligent Computing and Secure Technologies.
+          </p>
+          <!-- <a href="#" class="btn has-before"> -->
+            <!-- <span class="span">Read more</span> -->
+            <!-- <ion-icon name="arrow-forward"></ion-icon> -->
+          <!-- </a> -->
+        </div>
+      </div>
+
+      <!-- Column 2 -->
+      <div class="achievement-column">
+        <div class="achievement-card">
+          <h3 class="h3 card-title">Career Essentials in Business Analysis</h3>
+          <p class="card-text">
+            Completed a business analysis program focused on requirement gathering and data-driven decision-making.
+          </p>
+          <!-- <a href="#" class="btn has-before"> -->
+            <!-- <span class="span">Read more</span> -->
+            <!-- <ion-icon name="arrow-forward"></ion-icon> -->
+          <!-- </a> -->
+        </div>
+
+        <div class="achievement-card">
+          <h3 class="h3 card-title">NPTEL Cloud Computing Certification</h3>
+          <p class="card-text">
+            Completed a Cloud Computing course from NPTEL under IIT Kharagpur.
+          </p>
+          <!-- <a href="#" class="btn has-before"> -->
+            <!-- <span class="span">Read more</span> -->
+            <!-- <ion-icon name="arrow-forward"></ion-icon> -->
+          <!-- </a> -->
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<style>
+  /* Two Column Achievements Layout */
+  .two-column-achievements {
+    display: flex;
+    gap: 40px;
+    margin-top: 50px;
+  }
+
+  .achievement-column {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .achievement-card {
+    background: var(--eerie-black-2);
+    border-radius: 12px;
+    padding: 30px;
+    transition: all 0.3s ease;
+  }
+
+  .achievement-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+  }
+
+  .achievement-card .card-title {
+    font-size: 1.8rem;
+    margin-bottom: 15px;
+    color: var(--white);
+  }
+
+  .achievement-card .card-text {
+    margin-bottom: 20px;
+    color: var(--light-gray);
+    line-height: 1.6;
+  }
+
+  @media (max-width: 768px) {
+    .two-column-achievements {
+      flex-direction: column;
+      gap: 30px;
+    }
+    
+    .section-title {
+      font-size: 3rem !important;
+    }
+  }
+</style>
+
+
+  <!-- 
+    - #FOOTER
+  -->
+
+  <footer class="footer">
+    <div class="container">
+
+      <ul class="footer-list">
+
+        <li>
+          <p class="h4 footer-list-title">Get in touch</p>
+        </li>
+
+        <li>
+          <a href="mailto:tparjun12@gmail.com" class="footer-link">tparjun12@gmail.com</a>
+        </li>
+
+        <li>
+          <a href="tel:9447675234" class="footer-link">+91 9447675234</a>
+        </li>
+
+      </ul>
+
+      <ul class="footer-list">
+
+        <li>
+          <p class="h4 footer-list-title">Location</p>
+        </li>
+
+        <li>
+          <a href="#" class="footer-link">Palakkad, India</a>
+        </li>
+
+      </ul>
+
+      <ul class="social-list">
+
+        <li>
+          <a href="https://github.com/tpArjun123" class="social-link">
+            <ion-icon name="logo-github"></ion-icon>
+          </a>
+        </li>
+
+        <li>
+          <a href="https://linkedin.com/in/arjun-tp-" class="social-link">
+            <ion-icon name="logo-linkedin"></ion-icon>
+          </a>
+        </li>
+
+        <!-- <li>
+          <a href="#" class="social-link">
+            <ion-icon name="logo-twitter"></ion-icon>
+          </a>
+        </li> -->
+
+        <li>
+          <a href="#" class="social-link">
+            <ion-icon name="mail-outline"></ion-icon>
+          </a>
+        </li>
+
+      </ul>
+
+    </div>
+  </footer>
+
+
+
+
+
+  <!-- 
+    - custom js link
+  -->
+  <script src="./assets/js/script.js"></script>
+
+  <!-- 
+    - ionicon link
+  -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+</body>
+
+</html>
